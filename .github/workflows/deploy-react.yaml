@@ -31,10 +31,10 @@ jobs:
         cmd: install # will run `yarn install` command
     
     - name: Build React App
-      uses: yarn build
+      run: yarn build
     
     - name: Install Surge
-      uses: npm install -g surge
+      run: npm install --global surge
     
     - name: Deploy React App to Surge
       run: surge ./build expense-tracker-app-mubashir-akhtar.surge.sh --token ${{ secrets.SURGE_TOKEN }}
