@@ -1,10 +1,12 @@
-import React from 'react';
+import React  from 'react';
 import './App.css';
+import './Room.css';
+import Room from './Room';
 
-function App(props) {
+function App() {
   return (
     <div>
-      <h1>Hello {props.name}</h1>
+      <Room />
     </div>
   );
 }
